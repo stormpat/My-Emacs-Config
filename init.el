@@ -1,3 +1,6 @@
+;; Pre-init stuff
+;; -----------------------------------------------------------------------------
+
 (setq inhibit-startup-message t)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -34,13 +37,12 @@
 (setq-default line-spacing 5)
 (setq-default linum-format "%5d   ")
 
-;;(when window-system (set-frame-position (selected-frame) 100 60))
-
 ;; -----------------------------------------------------------------------------
 ;; Behavior.
 
 (column-number-mode t)
-(delete-selection-mode 1)
+(delete-selection-mode t)
+(electric-pair-mode t)
 
 (set-buffer-file-coding-system 'utf-8-unix)
 
@@ -56,8 +58,6 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (put 'dired-find-alternate-file 'disabled nil)
-
-(electric-pair-mode t)
 
 ;; -----------------------------------------------------------------------------
 ;; Extensions.
@@ -112,13 +112,14 @@
 ;; -----------------------------------------------------------------------------
 ;; Keyboard mappings.
 
-(global-set-key (kbd "M-<down>") 'mc/mark-next-like-this)
-(global-set-key (kbd "M-<up>") 'mc/mark-next-like-this-symbol)
-
 (global-set-key (kbd "C-k") 'kill-whole-line)
 (global-set-key (kbd "C-p") 'projectile-find-file)
+(global-set-key (kbd "M-<down>") 'mc/mark-next-like-this)
+(global-set-key (kbd "M-<up>") 'mc/mark-next-like-this-symbol)
 (global-set-key (kbd "M-g") 'magit-status)
 
 ;; Post-init stuff
 ;; -----------------------------------------------------------------------------
+
 (when window-system (set-frame-size (selected-frame) 98 52))
+;;(when window-system (set-frame-position (selected-frame) 100 60))
