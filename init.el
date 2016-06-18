@@ -39,12 +39,13 @@
 ;; -----------------------------------------------------------------------------
 ;; Behavior.
 
+(column-number-mode t)
+(delete-selection-mode 1)
+
 (set-buffer-file-coding-system 'utf-8-unix)
 
 (setq-default buffer-file-coding-system 'utf-8-unix)
 (setq-default c-basic-offset 4)
-(setq-default column-number-mode t)
-(setq-default delete-selection-mode t)
 (setq-default indent-tabs-mode nil)
 (setq-default org-log-done 'time)
 (setq-default tab-width 4)
@@ -116,6 +117,7 @@
 
 (global-set-key (kbd "C-k") 'kill-whole-line)
 (global-set-key (kbd "C-p") 'projectile-find-file)
+(global-set-key (kbd "M-g") 'magit-status)
 
 ;; Post-init stuff
 ;; -----------------------------------------------------------------------------
