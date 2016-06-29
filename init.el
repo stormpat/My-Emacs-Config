@@ -46,6 +46,8 @@
 
 (set-buffer-file-coding-system 'utf-8-unix)
 
+(setq-default ring-bell-function 'ignore)
+
 (setq-default buffer-file-coding-system 'utf-8-unix)
 (setq-default c-basic-offset 4)
 (setq-default indent-tabs-mode nil)
@@ -112,11 +114,12 @@
 ;; -----------------------------------------------------------------------------
 ;; Keyboard mappings.
 
+(global-set-key (kbd "C-b") (lambda () (interactive) (switch-to-buffer nil)))
 (global-set-key (kbd "C-k") 'kill-whole-line)
 (global-set-key (kbd "C-p") 'projectile-find-file)
 (global-set-key (kbd "M-<down>") 'mc/mark-next-like-this)
 (global-set-key (kbd "M-<up>") 'mc/mark-next-like-this-symbol)
-(global-set-key (kbd "M-g") 'magit-status)
+(global-set-key (kbd "M-p") 'align-regexp)
 
 ;; Post-init stuff
 ;; -----------------------------------------------------------------------------
