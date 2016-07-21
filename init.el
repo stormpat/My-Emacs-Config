@@ -47,11 +47,12 @@
 ;; Install and setup packages from MELPA.
 (packages-install
  '(auto-complete
+   clojure-mode
    column-marker
    csharp-mode
    diminish
    flycheck
-   highlight-indent-guides
+   ;highlight-indent-guides
    highlight-numbers
    highlight-operators
    highlight-parentheses
