@@ -37,7 +37,7 @@
 (load-theme 'github t)
 
 ;; Font is super important! ;-)
-(set-frame-font "Consolas-11.0:antialias=subpixel")
+(set-frame-font "Consolas-10.0:antialias=subpixel")
 
 ;; More line spacing makes code easier on the eyes.
 (setq-default line-spacing 5)

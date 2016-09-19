@@ -55,9 +55,10 @@
    ;highlight-indent-guides
    highlight-numbers
    highlight-operators
-   highlight-parentheses
+   ;highlight-parentheses
    hlinum
    magit
+   markdown-mode
    multiple-cursors
    projectile
    pug-mode
