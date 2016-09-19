@@ -1,4 +1,8 @@
 *~
-\#*\#
+.mc-lists.el
 /auto-save-list/
 /elpa/
+\#*\#
+ac-comphist.dat
+projectile-bookmarks.eld
+projectile.cache
