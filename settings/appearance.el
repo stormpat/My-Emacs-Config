@@ -34,7 +34,7 @@
 ;; Path for custom themes.
 (setq custom-theme-directory (concat user-emacs-directory "themes"))
 
-(load-theme 'github t)
+(load-theme 'zweilight t)
 
 ;; Font is super important! ;-)
 (set-frame-font "Consolas-10.0:antialias=subpixel")
