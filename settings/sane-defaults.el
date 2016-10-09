@@ -13,6 +13,9 @@
 ;; Prefer utf-8.
 (prefer-coding-system 'utf-8)
 
+;; Prefer Unix line endings.
+(setq-default buffer-file-coding-system 'utf-8-unix)
+
 ;; Delete selection when typing.
 (delete-selection-mode 1)
 
