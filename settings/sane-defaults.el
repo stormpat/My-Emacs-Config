@@ -25,6 +25,9 @@
 ;; Stop on 'subwords'.
 (global-subword-mode 1)
 
+(setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
+(setq backup-by-copying t)
+
 ;; Tweak mouse wheel scrolling.
 (setq-default mouse-wheel-scroll-amount '(1))
 (setq-default mouse-wheel-progressive-speed nil)
