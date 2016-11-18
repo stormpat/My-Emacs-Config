@@ -14,4 +14,7 @@
 (global-set-key (kbd "M-<left>")  'windmove-left)
 (global-set-key (kbd "M-<right>") 'windmove-right)
 
+;; Build command shortcut.
+;;(global-set-key (kbd "C-S-b") )
+
 (provide 'key-bindings)

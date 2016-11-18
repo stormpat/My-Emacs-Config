@@ -645,7 +645,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(hl-sexp-face ((,class (:background ,github-bg+1))
                    (t :weight bold)))
 ;;;;; hlinum
-   `(linum-highlight-face ((t (:foreground ,github-fg-1 :background ,github-bg-05))))
+   `(linum-highlight-face ((t (:foreground ,github-green :background ,github-bg-05))))
 ;;;;; hydra
    `(hydra-face-red ((t (:foreground ,github-red-1 :background ,github-bg))))
    `(hydra-face-amaranth ((t (:foreground ,github-red-3 :background ,github-bg))))

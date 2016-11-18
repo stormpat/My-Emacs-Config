@@ -1,6 +1,7 @@
 (require 'fill-column-indicator)
 
 (setq fci-dash-pattern 0.5)
+(setq fci-handle-truncate-lines nil)
 (setq fci-rule-color "#969896")
 (setq fci-rule-use-dashes t)
 (setq fci-rule-width 1)
