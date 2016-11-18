@@ -7,6 +7,9 @@
 (setq column-number-mode t)
 (setq line-number-mode t)
 
+;; We don't really want lines wider than 80 characters.
+(setq-default fill-column 80)
+
 ;; Don't use tabs.
 (setq-default indent-tabs-mode nil)
 

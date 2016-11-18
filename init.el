@@ -44,23 +44,18 @@
 (require 'setup-org-mode)
 
 ;; -----------------------------------------------
-;; Install and setup packages from MELPA.
+;; Install and setup packages from (M)ELPA.
 (packages-install
- '(auto-complete
-   clojure-mode
-   column-marker
+ '(company
    csharp-mode
    diminish
+   fill-column-indicator
    flycheck
-   ;highlight-indent-guides
    highlight-numbers
-   highlight-operators
-   ;highlight-parentheses
+   highlight-parentheses
    hlinum
    magit
-   markdown-mode
    multiple-cursors
    projectile
-   pug-mode
    rainbow-mode
    web-mode))

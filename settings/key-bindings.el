@@ -9,4 +9,9 @@
 ;; Shortcut to align lines by regexp.
 (global-set-key (kbd "M-p") 'align-regexp)
 
+;; Move between windows easily.
+(global-set-key (kbd "C-<tab>") 'other-window)
+(global-set-key (kbd "M-<left>")  'windmove-left)
+(global-set-key (kbd "M-<right>") 'windmove-right)
+
 (provide 'key-bindings)

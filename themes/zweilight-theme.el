@@ -627,6 +627,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; hl-sexp
    `(hl-sexp-face ((,class (:background ,zweilight-grey))
                    (t :weight bold)))
+;;;;; hlinum
+   `(linum-highlight-face ((t (:background ,zweilight-bg :foreground ,zweilight-yellow))))
 ;;;;; hydra
    `(hydra-face-red ((t (:foreground ,zweilight-red-pastel+3 :background ,zweilight-bg))))
    `(hydra-face-amaranth ((t (:foreground ,zweilight-red-pastel+1 :background ,zweilight-bg))))
@@ -715,7 +717,6 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ruler-mode-tab-stop ((t (:inherit 'ruler-mode-fill-column))))
    `(ruler-mode-current-column ((t (:foreground ,zweilight-cyan :box t))))
    `(ruler-mode-default ((t (:foreground ,zweilight-fg-1 :background ,zweilight-bg))))
-
 ;;;;; lui
    `(lui-time-stamp-face ((t (:foreground ,zweilight-blue))))
    `(lui-hilight-face ((t (:foreground ,zweilight-fg-1 :background ,zweilight-bg))))
