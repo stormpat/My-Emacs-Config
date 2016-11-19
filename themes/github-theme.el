@@ -72,6 +72,7 @@
     ("github-blue-4"   . "#333333")
     ("github-blue-5"   . "#333333")
     ("github-black"    . "#000000")
+    ("github-gray"     . "#d0d0d0")
     ("github-magenta"  . "#333333"))
   "List of GitHub colors.
 Each element has the form (NAME . HEX).
@@ -159,12 +160,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mode-line-inactive
      ((t (:foreground ,github-green-1
                       :background ,github-bg
-                      :box (:line-width -1 :color: ,github-cyan)))))
+                      :box (:line-width -1 :color ,github-gray)))))
    `(region ((,class (:background ,github-bg-1))
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,github-bg+2))))
    `(trailing-whitespace ((t (:background ,github-red))))
-   `(vertical-border ((t (:foreground ,github-green))))
+   `(vertical-border ((t (:foreground ,github-gray))))
 ;;;;; font lock
    `(font-lock-builtin-face ((t (:foreground ,github-yellow))))
    `(font-lock-comment-face ((t (:foreground ,github-green))))
