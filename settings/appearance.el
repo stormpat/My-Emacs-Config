@@ -13,9 +13,6 @@
 ;; Don't blink the cursor.
 (blink-cursor-mode -1)
 
-;; Disable tooltips.
-(tooltip-mode -1)
-
 ;; Highlight current line.
 (global-hl-line-mode 1)
 

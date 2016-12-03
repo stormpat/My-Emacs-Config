@@ -1,5 +1,8 @@
 ;;------------------------------------------------------------------------------
 
+;; Disable tooltips.
+(tooltip-mode -1)
+
 (setq echo-keystrokes 0.1)
 (setq shift-select-mode nil)
 
@@ -32,8 +35,10 @@
 (setq backup-by-copying t)
 
 ;; Tweak mouse wheel scrolling.
-(setq-default mouse-wheel-scroll-amount '(1))
-(setq-default mouse-wheel-progressive-speed nil)
+;;(setq-default mouse-wheel-scroll-amount '(1))
+;;(setq-default mouse-wheel-progressive-speed nil)
+;; No, disable it altogether.
+(mouse-wheel-mode -1)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 

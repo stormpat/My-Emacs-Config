@@ -41,7 +41,7 @@
 
 ;; -----------------------------------------------
 ;; Setup intrinsic modes.
-(require 'setup-org-mode)
+(require 'setup-c++-mode)
 
 ;; -----------------------------------------------
 ;; Install and setup packages from (M)ELPA.
