@@ -20,14 +20,10 @@
 (setq settings-dir
       (concat user-emacs-directory "settings"))
 
-(setq site-lisp-dir
-      (concat user-emacs-directory "site-lisp"))
-
 (setq custom-file (concat user-emacs-directory "custom.el"))
-(load custom-file)
+;;(load custom-file)
 
 (add-to-list 'load-path settings-dir)
-(add-to-list 'load-path site-lisp-dir)
 
 ;; -----------------------------------------------
 ;; Setup sane defaults.
@@ -54,7 +50,6 @@
    highlight-numbers
    highlight-parentheses
    hlinum
-   magit
    multiple-cursors
    projectile
    rainbow-mode

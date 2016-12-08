@@ -38,7 +38,8 @@
 ;;(setq-default mouse-wheel-scroll-amount '(1))
 ;;(setq-default mouse-wheel-progressive-speed nil)
 ;; No, disable it altogether.
-(mouse-wheel-mode -1)
+(dolist (k mwheel-installed-bindings)
+  (global-set-key k 'ignore))
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
