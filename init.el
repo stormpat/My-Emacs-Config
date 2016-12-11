@@ -1,4 +1,5 @@
 ;;(package-initialize)
+(require 'cl)
 
 ;; -----------------------------------------------
 ;; Disable much of GUI.
@@ -42,7 +43,8 @@
 ;; -----------------------------------------------
 ;; Install and setup packages from (M)ELPA.
 (packages-install
- '(company
+ '(auctex
+   company
    csharp-mode
    diminish
    fill-column-indicator

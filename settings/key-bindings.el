@@ -14,11 +14,12 @@
 (global-set-key (kbd "M-<left>")  'windmove-left)
 (global-set-key (kbd "M-<right>") 'windmove-right)
 
-(global-set-key
- (kbd "C-x 3")
- (lambda
-   ()
-   (interactive)
-   (set-frame-size (selected-frame) 196 62) (split-window-right)))
+(when (display-graphic-p)
+  (global-set-key
+   (kbd "C-x 3")
+   (lambda
+     ()
+     (interactive)
+     (set-frame-size (selected-frame) 196 62) (split-window-right))))
 
 (provide 'key-bindings)
