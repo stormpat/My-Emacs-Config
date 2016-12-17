@@ -16,6 +16,9 @@
 ;; Don't use tabs.
 (setq-default indent-tabs-mode nil)
 
+;; Suppress the scratch buffer message.
+(setq initial-scratch-message "")
+
 ;; Prefer utf-8.
 (prefer-coding-system 'utf-8)
 
