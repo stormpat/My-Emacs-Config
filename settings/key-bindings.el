@@ -14,6 +14,12 @@
 (global-set-key (kbd "M-<left>")  'windmove-left)
 (global-set-key (kbd "M-<right>") 'windmove-right)
 
+;; Open current directory with Nautilus.
+
+(global-set-key (kbd "M-e")
+                (lambda () (interactive)
+                  (call-process "nautilus" nil 0 nil default-directory)))
+
 (when (display-graphic-p)
   (global-set-key
    (kbd "C-x 3")
