@@ -29,10 +29,7 @@
 (fringe-mode '(0 . 0))
 
 ;; Path for custom themes.
-(setq custom-theme-directory (concat user-emacs-directory "themes"))
-
-(when (display-graphic-p)
-  (load-theme 'github t))
+;;(setq custom-theme-directory (concat user-emacs-directory "themes"))
 
 ;; Font is super important! ;-)
 (set-frame-font "Ubuntu Mono-11.0:antialias=subpixel")

@@ -2,6 +2,10 @@
 (require 'cl)
 
 ;; -----------------------------------------------
+;; Set frame title.
+(setq frame-title-format '("Emacs " emacs-version " - %b"))
+
+;; -----------------------------------------------
 ;; Disable much of GUI.
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -13,8 +17,8 @@
 
 ;; -----------------------------------------------
 ;; Setup global variables.
-(setq is-linux (equal system-type 'gnu/linux))
-(setq is-mac (equal system-type 'darwin))
+;;(setq is-linux (equal system-type 'gnu/linux))
+;;(setq is-mac (equal system-type 'darwin))
 
 ;; -----------------------------------------------
 ;; Setup paths.
@@ -49,6 +53,7 @@
    diminish
    fill-column-indicator
    flycheck
+   github-theme
    highlight-numbers
    highlight-parentheses
    hlinum
@@ -56,3 +61,6 @@
    projectile
    rainbow-mode
    web-mode))
+
+(when (display-graphic-p)
+  (load-theme 'github t))
