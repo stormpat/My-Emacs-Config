@@ -2,6 +2,7 @@
 
 (require 'github-theme)
 
-(load-theme 'github t)
+(when (display-graphic-p)
+  (load-theme 'github t))
 
 (provide 'setup-github-theme)

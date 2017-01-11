@@ -61,6 +61,3 @@
    projectile
    rainbow-mode
    web-mode))
-
-(when (display-graphic-p)
-  (load-theme 'github t))
