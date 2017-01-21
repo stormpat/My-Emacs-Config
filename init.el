@@ -2,10 +2,6 @@
 (require 'cl)
 
 ;; -----------------------------------------------
-;; Set frame title.
-(setq frame-title-format '("Emacs " emacs-version " - %b"))
-
-;; -----------------------------------------------
 ;; Disable much of GUI.
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -57,6 +53,7 @@
    highlight-numbers
    highlight-parentheses
    hlinum
+   hy-mode
    multiple-cursors
    projectile
    rainbow-mode

@@ -1,5 +1,8 @@
 ;;------------------------------------------------------------------------------
 
+;; Set frame title.
+(setq frame-title-format '("%b"))
+
 ;; Disable tooltips.
 (tooltip-mode -1)
 
