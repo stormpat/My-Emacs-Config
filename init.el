@@ -50,6 +50,7 @@
    fill-column-indicator
    flycheck
    github-theme
+   haskell-mode
    highlight-numbers
    highlight-parentheses
    hlinum
