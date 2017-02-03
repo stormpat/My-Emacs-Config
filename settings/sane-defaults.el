@@ -9,6 +9,9 @@
 (setq echo-keystrokes 0.1)
 (setq shift-select-mode nil)
 
+;; Don't require full yes or full no.
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;; Show column and line numbers.
 (setq column-number-mode t)
 (setq line-number-mode t)
